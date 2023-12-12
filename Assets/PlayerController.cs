@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 [SelectionBase]
 public class PlayerController : MonoBehaviour
@@ -21,9 +22,18 @@ public class PlayerController : MonoBehaviour
 
     private float blend;
 
+    [SerializeField]
+    private SoundManager soundManager;
+
+    [SerializeField]
+    private GameObject winCube;
+
+    private bool hasWon = false;
+
     void Start()
     {
         RayCastDown();
+        soundManager = GameObject.FindAnyObjectByType<SoundManager>();
     }
 
     void Update()
@@ -40,6 +50,13 @@ public class PlayerController : MonoBehaviour
         else
         {
             transform.parent = null;
+        }
+
+        if (currentCube == winCube.transform && !hasWon)
+        {
+            soundManager.PlayWinSound();
+            hasWon = true;
+            StartCoroutine(LoadAfterDelay());
         }
 
         // CLICK ON CUBE
@@ -207,6 +224,12 @@ public class PlayerController : MonoBehaviour
     void SetBlend(float x)
     {
         GetComponentInChildren<Animator>().SetFloat("Blend", x);
+    }
+
+    IEnumerator LoadAfterDelay()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }

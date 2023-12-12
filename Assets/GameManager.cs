@@ -14,9 +14,15 @@ public class GameManager : MonoBehaviour
 
     public Transform[] objectsToHide;
 
+    private SoundManager soundManager;
+
+    [SerializeField]
+    private float rotateTime = 1.272f;
+
     private void Awake()
     {
         instance = this;
+        soundManager = GetComponent<SoundManager>();
     }
 
     void Update()
@@ -48,8 +54,9 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
+            soundManager.PlayRotateSound();
             pivots[0].DOComplete();
-            pivots[0].DORotate(new Vector3(0, 90 , 0), .6f, RotateMode.WorldAxisAdd).SetEase(Ease.OutBack);
+            pivots[0].DORotate(new Vector3(0, 90, 0), rotateTime, RotateMode.WorldAxisAdd).SetEase(Ease.OutBack);
         }
 
         foreach (Transform t in objectsToHide)
@@ -66,8 +73,9 @@ public class GameManager : MonoBehaviour
 
     public void RotateRightPivot()
     {
+        soundManager.PlayRotateSound();
         pivots[1].DOComplete();
-        pivots[1].DORotate(new Vector3(0, 0, 90), .6f).SetEase(Ease.OutBack);
+        pivots[1].DORotate(new Vector3(0, 0, 90), rotateTime).SetEase(Ease.OutBack);
     }
 }
 
