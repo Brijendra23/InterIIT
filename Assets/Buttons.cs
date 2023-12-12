@@ -71,4 +71,10 @@ public class Buttons : MonoBehaviour
         QualitySettings.SetQualityLevel(graphics);
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+    }
+
 }

@@ -64,7 +64,9 @@
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\SoundManager.cs" />
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\RotateOnArrival.cs" />
     <Compile Include="Assets\PlayerAnimation.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Gravity.cs" />
