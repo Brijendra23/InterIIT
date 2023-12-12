@@ -7,12 +7,30 @@ public class RotateOnArrival : MonoBehaviour
     public float arrivalDistance = 0.1f;
     private bool hasArrived = false;
     private bool rotationTriggered = false;
-    private float rotationDuration = 1.25f;
+    [SerializeField]
+    private float rotationDuration = 1.272f;
+
+    [SerializeField]
+    private SoundManager soundManager;
+
+    void Start()
+    {
+        soundManager = GameObject.Find("GameManager").GetComponent<SoundManager>();
+    }
 
     void Update()
     {
         if (!hasArrived && Vector3.Distance(GetPlayerPosition(), targetPosition) < arrivalDistance)
         {
+            if (soundManager != null)
+            {
+                soundManager.PlayRotateSound();
+            }
+            else
+            {
+                soundManager = GameObject.Find("GameManager").GetComponent<SoundManager>();
+                soundManager.PlayRotateSound();
+            }
             hasArrived = true;
         }
 

@@ -11,9 +11,12 @@ public class Up : MonoBehaviour
     private Vector3 startPosition;
     private float elapsedTime = 0f;
 
+    private SoundManager soundManager;
+
     void Start()
     {
         startPosition = transform.position;
+        soundManager = GameObject.Find("GameManager").GetComponent<SoundManager>();
     }
 
     void Update()
@@ -21,6 +24,15 @@ public class Up : MonoBehaviour
         if (!hasArrived && Vector3.Distance(GameObject.Find("Player").transform.position, targetPosition) < arrivalDistance)
         {
             hasArrived = true;
+            if (soundManager != null)
+            {
+                soundManager.PlayRotateSound();
+            }
+            else
+            {
+                soundManager = GameObject.Find("GameManager").GetComponent<SoundManager>();
+                soundManager.PlayRotateSound();
+            }
             StartCoroutine(SmoothTransition());
         }
     }
