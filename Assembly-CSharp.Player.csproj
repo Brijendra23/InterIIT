@@ -75,6 +75,7 @@
     <Compile Include="Assets\Rotate.cs" />
     <Compile Include="Assets\Walkable.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Timer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -872,14 +873,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Cinemachine.Player.csproj">
-      <Project>{63919341-AFF1-1E3D-178A-3F0B025881E4}</Project>
-      <Name>Cinemachine.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Runtime.Player.csproj">
-      <Project>{1BF9100D-677B-25AC-F318-31A7DED46254}</Project>
-      <Name>Unity.Postprocessing.Runtime.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Player.csproj">
       <Project>{53614295-E30F-8C50-0B75-FFA7D7662DFE}</Project>
       <Name>Unity.Timeline.Player</Name>
@@ -892,10 +885,6 @@
       <Project>{9AD73EBF-10A5-4A47-ACF0-44C38E36AE60}</Project>
       <Name>Unity.ProBuilder.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.ProGrids.Player.csproj">
-      <Project>{7397AD0E-C933-E8E7-FB14-5AA2EABBE3B8}</Project>
-      <Name>Unity.ProGrids.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.Player.csproj">
       <Project>{C1DE16F1-1447-B8E2-BEEF-E13688FA6745}</Project>
       <Name>UnityEngine.UI.Player</Name>
@@ -903,6 +892,18 @@
     <ProjectReference Include="Boxophobic.Utils.Scripts.Player.csproj">
       <Project>{21F14649-6E4E-4C19-18B4-C051FCFEC8A8}</Project>
       <Name>Boxophobic.Utils.Scripts.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cinemachine.Player.csproj">
+      <Project>{63919341-AFF1-1E3D-178A-3F0B025881E4}</Project>
+      <Name>Cinemachine.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.Player.csproj">
+      <Project>{1BF9100D-677B-25AC-F318-31A7DED46254}</Project>
+      <Name>Unity.Postprocessing.Runtime.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ProGrids.Player.csproj">
+      <Project>{7397AD0E-C933-E8E7-FB14-5AA2EABBE3B8}</Project>
+      <Name>Unity.ProGrids.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

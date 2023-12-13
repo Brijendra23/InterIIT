@@ -358,6 +358,7 @@
 "Assets/Rotate.cs"
 "Assets/RotateOnArrival.cs"
 "Assets/SoundManager.cs"
+"Assets/Timer.cs"
 "Assets/Up.cs"
 "Assets/Walkable.cs"
 -langversion:9.0

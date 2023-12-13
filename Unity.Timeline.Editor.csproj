@@ -176,9 +176,9 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Recording\AnimationTrackRecorder.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\inspectors\GroupTrackInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\treeview\TrackGui\TimelineTrackBaseGUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Recording\TimelineRecording.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Audio\AudioPlayableAssetEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\inspectors\EditorClip.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Recording\TimelineRecording.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\treeview\Drawers\Layers\MarkersLayer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Window\Modes\TimelineInactiveMode.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Recording\TimelineRecording_Monobehaviour.cs" />
@@ -187,8 +187,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Manipulators\Utils\EditModeUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Manipulators\TimelineClipGroup.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\inspectors\TimelineAssetInspector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Utilities\PropertyCollector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Activation\ActivationTrackEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Utilities\PropertyCollector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Manipulators\Sequence\EaseClip.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Window\ViewModel\TimelineWindowViewPrefs.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@1.6.5\Editor\Window\TimelineWindow_PlayableLookup.cs" />
