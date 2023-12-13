@@ -11,7 +11,8 @@ public class Buttons : MonoBehaviour
     private Animator settingsAnimator;
     public void Retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1f; 
     }
     public void Play()
     {
