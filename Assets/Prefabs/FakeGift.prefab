@@ -259,7 +259,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2492801759063734614}
   - component: {fileID: 5207885369205349602}
-  - component: {fileID: 6465399679196251000}
   m_Layer: 0
   m_Name: FakeGift
   m_TagString: Untagged
@@ -302,19 +301,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3602703, y: 2.317762, z: 2.3517687}
   m_Center: {x: -0.034006633, y: 1.1009682, z: 0.0042508044}
---- !u!114 &6465399679196251000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3014004718319313900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e4aa95d8c9cd0e4da8e0c2e1f59b0a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
 --- !u!1 &4327992317234385559
 GameObject:
   m_ObjectHideFlags: 0

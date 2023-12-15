@@ -342,7 +342,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4186900258653975523}
   - component: {fileID: 5684386231763337116}
-  - component: {fileID: 7432629973723461246}
   m_Layer: 0
   m_Name: GiftBox_fbx
   m_TagString: Untagged
@@ -384,19 +383,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3582902, y: 2.2799468, z: 2.31033}
   m_Center: {x: -0.008596579, y: 1.10822, z: -0.008088747}
---- !u!114 &7432629973723461246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3553633910644533593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cddda7e2a637194c9790ad72bd3c76b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 30
 --- !u!1 &5553625103834583513
 GameObject:
   m_ObjectHideFlags: 0
